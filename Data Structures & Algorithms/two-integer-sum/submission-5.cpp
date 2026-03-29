@@ -6,10 +6,10 @@ public:
             int complement=target-nums[i];
 
 
-            if (mp.contains(complement)){ //.count or .contains both are same in unordered map
+            if (mp.contains(complement)){//.count or .contains both are same in unordered map
                 return {mp[complement],i} ; //mp[complement] returns index of mp. returns vector
             }
-            mp[nums[i]]=i;  //key->value.  mapping value to its index
+            mp[nums[i]]=i;  //key->value.  value mapped to its index
         }
         return {};
     }
